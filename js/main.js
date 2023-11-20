@@ -14,13 +14,18 @@ let posicaoInicial;
 const capturarLocalizacao = document.getElementById( 'localizacao');
 const latitude = document.getElementById( 'latitude' );
 const longitude = document.getElementById( 'longitude' );
-
+ 
+let gmap_canvas = document.getElementById ("gmap_canvas");
 
 const sucesso = (posicao) => {
     posicaoInicial = posicao;
     latitude.innerHTML = posicaoInicial.coords.latitude;
     longitude.innerHTML = posicaoInicial.coords.longitude;
+    map.src = "https://maps.google.com/maps?q" + 
 
+
+    const gmap_canvas.src = "https://maps.google.com/maps?q=636+5th+Ave%2C+New+York&t=&z=13&ie=UTF8&iwloc=&output=embed";
+    
 }
 
 const erro = (error) => {
