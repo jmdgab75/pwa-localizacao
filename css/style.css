@@ -14,13 +14,13 @@ body {
 .titulo{
     text-align: center;
     color:rgb(73, 71, 158);
-    font—size: 2em;
+    font-size: 2em;
 }
 
 .conteudo{
     background-color: rgb( 169, 164 ,164);
     margin: 1.5em 0;
-    box—shadow: 3px 3px 3px rgba(153, 154, 225, 0.3);
+    box-shadow: 3px 3px 3px rgba(153, 154, 225, 0.3);
     text-align: center;
 }
 
@@ -50,4 +50,24 @@ body {
     display: inline-block;
     font-size: 16px;
     width: 100%;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    width: 600px;
+    height: 400px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 600px;
+    height: 400px;
+}
+
+.gmap_iframe {
+    width: 600px !important;
+    height: 400px !important;
+    align-items: center;
 }
